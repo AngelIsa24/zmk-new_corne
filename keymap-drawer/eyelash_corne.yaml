@@ -88,9 +88,9 @@ layers:
   - $$mdi:arrow-down-bold$$
   - ^
   - '#'
-  - KP 3
-  - KP 2
   - KP 1
+  - KP 2
+  - KP 3
   - KP NLCK
   - {t: ',', s: <}
   - {t: ., s: '>'}

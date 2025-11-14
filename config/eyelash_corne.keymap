@@ -162,7 +162,13 @@
         PasteMacro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_GUI &kp V>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
 
             label = "NEW_MACRO";
         };
@@ -170,7 +176,13 @@
         NotificationMacro: emojiMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_GUI &kp N>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp N>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
 
             label = "EMOJIMACRO";
         };
@@ -178,7 +190,13 @@
         SoundMacro: SoundMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_GUI &kp LEFT_CONTROL &kp V>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LEFT_GUI &kp LEFT_CONTROL>;
 
             label = "SOUNDMACRO";
         };
@@ -281,7 +299,7 @@
                            &kp N0  &kp N1  &kp SPACE                                    &trans  &trans  &trans
             >;
 
-            label = "GamingNum";
+            label = "GamNum";
         };
 
         layer_7 {
@@ -292,7 +310,7 @@
                            &kp F5  &kp F4  &kp SPACE                                    &trans  &trans  &trans
             >;
 
-            label = "GamingFn";
+            label = "GamFn";
         };
     };
 };

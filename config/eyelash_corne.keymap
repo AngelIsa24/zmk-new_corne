@@ -89,28 +89,28 @@
 
         FromNumTo0 {
             bindings = <&to 0>;
-            key-positions = <44 45>;
+            key-positions = <42 0>;
             layers = <1>;
             timeout-ms = <50>;
         };
 
         FromSymTo0 {
             bindings = <&to 0>;
-            key-positions = <44 45>;
+            key-positions = <47 12>;
             layers = <2>;
             timeout-ms = <50>;
         };
 
         FromFnTo0 {
             bindings = <&to 0>;
-            key-positions = <44 45>;
+            key-positions = <44 47>;
             layers = <3>;
             timeout-ms = <50>;
         };
 
         FromGHTo0 {
             bindings = <&to 0>;
-            key-positions = <44 45>;
+            key-positions = <0 12>;
             layers = <5>;
             timeout-ms = <50>;
         };
@@ -152,7 +152,7 @@
 
         FromEditTo0 {
             bindings = <&to 0>;
-            key-positions = <44 45>;
+            key-positions = <45 42>;
             layers = <4>;
             timeout-ms = <50>;
         };
@@ -162,21 +162,24 @@
         PasteMacro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp V>;
+            bindings = <&macro_press>, <&kp LEFT_GUI &kp V>;
+
             label = "NEW_MACRO";
         };
 
         NotificationMacro: emojiMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp N>;
+            bindings = <&macro_press>, <&kp LEFT_GUI &kp N>;
+
             label = "EMOJIMACRO";
         };
 
         SoundMacro: SoundMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_CONTROL &kp V>;
+            bindings = <&macro_press>, <&kp LEFT_GUI &kp LEFT_CONTROL &kp V>;
+
             label = "SOUNDMACRO";
         };
 
@@ -190,7 +193,7 @@
         InsultMacro: InsultMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(G) &kp LS(G) &kp N &kp SQT &kp T &kp SPACE &kp LS(W) &kp H &kp A &kp T &kp SPACE &kp A &kp SPACE &kp LS(L)>;
+            bindings = <&kp LS(G) &kp LS(G) &kp N &kp SQT &kp T &kp SPACE &kp LS(W) &kp H &kp A &kp T &kp SPACE &kp A &kp SPACE &kp LS(L)>;
             label = "INSULTMACRO";
         };
     };

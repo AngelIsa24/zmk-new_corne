@@ -47,8 +47,8 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - F13
-  - LEFT WIN
+  - $$mdi:apple-keyboard-command$$
+  - {t: '`', s: '~'}
   Numbers:
   - $$mdi:keyboard-tab$$
   - '*'
@@ -96,15 +96,15 @@ layers:
   - {t: ., s: '>'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - LEFT WIN
   Symbols:
   - $$mdi:keyboard-tab$$
   - {t: '`', s: '~'}
   - '!'
   - '@'
   - '#'
-  - F16
+  - PRINTSCREEN
   - $$mdi:arrow-up-bold$$
   - +
   - {t: '-', s: _}
@@ -117,7 +117,7 @@ layers:
   - $
   - '%'
   - ^
-  - F17
+  - '&PasteMacro'
   - $$mdi:arrow-left-bold$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:arrow-right-bold$$
@@ -128,11 +128,11 @@ layers:
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&SoundMacro'
   - '&'
   - '*'
   - '?'
-  - F18
+  - '&NotificationMacro'
   - MUTE
   - $$mdi:arrow-down-bold$$
   - <
@@ -145,8 +145,8 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-command$$
   - '"'
-  - LEFT WIN
   Functions:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - RGB TOG
@@ -176,12 +176,12 @@ layers:
   - F10
   - F11
   - F12
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F15
+  - '&PasteMacro'
+  - '&NotificationMacro'
   - $$mdi:skip-previous$$
   - PLAY PAUSE
   - $$mdi:skip-next$$
-  - F14
+  - '&SoundMacro'
   - MUTE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - HOME
@@ -194,8 +194,57 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - F13
-  - LEFT WIN
+  - $$mdi:apple-keyboard-command$$
+  - X
+  Editor:
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - F1
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - $$mdi:keyboard-esc$$
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - F2
+  - F3
+  - F4
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - .
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:keyboard-space$$
+  - F5
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - END
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - LGUI
+  - AC HOME
   Gaming:
   - $$mdi:keyboard-esc$$
   - T
@@ -224,7 +273,7 @@ layers:
   - K
   - L
   - {t: '`', s: '~'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&ggMacro'
   - $$mdi:apple-keyboard-control$$
   - B
   - Z
@@ -237,14 +286,14 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: /, s: '?'}
+  - '&InsultMacro'
   - $$mdi:keyboard-tab$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - F13
-  - LEFT WIN
+  - $$mdi:apple-keyboard-command$$
+  - {t: '`', s: '~'}
   GamingNum:
   - $$mdi:keyboard-esc$$
   - {t: '0', s: )}
@@ -343,96 +392,48 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Editor:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - F1
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-shift$$
-  - A
-  - S
-  - D
-  - F
-  - G
-  - F2
-  - F3
-  - F4
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - .
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:keyboard-space$$
-  - F5
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-esc$$
-  - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
-  - LGUI
-  - F13
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
-- p: [15, 16, 17]
+- p: [42, 0]
   k: {t: Numbers, h: toggle}
   l: [QWERTY]
-- p: [23, 24, 25]
+- p: [47, 12]
   k: {t: Symbols, h: toggle}
   l: [QWERTY]
-- p: [15, 16, 17, 23, 24, 25]
+- p: [44, 47]
   k: {t: Functions, h: toggle}
   l: [QWERTY]
-- p: [15, 16, 17, 44, 45, 23, 24, 25, 14, 26]
+- p: [0, 12]
   k: {t: Gaming, h: toggle}
   l: [QWERTY]
-- p: [15, 16, 17]
+- p: [44, 45]
   k: {t: QWERTY, h: toggle}
   l: [Numbers]
-- p: [23, 24, 25]
+- p: [44, 45]
   k: {t: QWERTY, h: toggle}
   l: [Symbols]
-- p: [16, 15, 17, 23, 24, 25]
+- p: [44, 45]
   k: {t: QWERTY, h: toggle}
   l: [Functions]
-- p: [15, 14, 16, 17, 44, 45, 23, 24, 25, 26]
+- p: [44, 45]
   k: {t: QWERTY, h: toggle}
   l: [Gaming]
-- p: [15, 17, 44, 16]
+- p: [14, 43]
   k: {t: GamingNum, h: toggle}
   l: [Gaming]
-- p: [15, 16, 17, 42]
+- p: [42, 1]
   k: {t: GamingFn, h: toggle}
   l: [Gaming]
-- p: [15, 16, 17, 44]
+- p: [14, 43]
   k: {t: Gaming, h: toggle}
   l: [GamingNum]
-- p: [15, 16, 17, 42]
+- p: [42, 1]
   k: {t: Gaming, h: toggle}
-- p: [15, 16, 17, 23, 24, 25, 44, 45]
+  l: [GamingFn]
+- p: [45, 42]
   k: {t: Editor, h: toggle}
   l: [QWERTY]
-- p: [15, 16, 17, 44, 45, 23, 24, 25]
+- p: [44, 45]
   k: {t: QWERTY, h: toggle}
   l: [Editor]

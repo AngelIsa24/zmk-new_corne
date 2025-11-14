@@ -294,7 +294,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-command$$
   - {t: '`', s: '~'}
-  GamingNum:
+  GamNum:
   - $$mdi:keyboard-esc$$
   - {t: '0', s: )}
   - {t: '1', s: '!'}
@@ -343,7 +343,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  GamingFn:
+  GamFn:
   - $$mdi:keyboard-esc$$
   - O
   - I
@@ -420,17 +420,17 @@ combos:
   k: {t: QWERTY, h: toggle}
   l: [Gaming]
 - p: [14, 43]
-  k: {t: GamingNum, h: toggle}
+  k: {t: GamNum, h: toggle}
   l: [Gaming]
 - p: [42, 1]
-  k: {t: GamingFn, h: toggle}
+  k: {t: GamFn, h: toggle}
   l: [Gaming]
 - p: [14, 43]
   k: {t: Gaming, h: toggle}
-  l: [GamingNum]
+  l: [GamNum]
 - p: [42, 1]
   k: {t: Gaming, h: toggle}
-  l: [GamingFn]
+  l: [GamFn]
 - p: [42, 0]
   k: {t: Editor, h: toggle}
   l: [QWERTY]

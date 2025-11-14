@@ -407,16 +407,16 @@ combos:
 - p: [0, 12]
   k: {t: Gaming, h: toggle}
   l: [QWERTY]
-- p: [44, 45]
+- p: [42, 0]
   k: {t: QWERTY, h: toggle}
   l: [Numbers]
-- p: [44, 45]
+- p: [47, 12]
   k: {t: QWERTY, h: toggle}
   l: [Symbols]
-- p: [44, 45]
+- p: [44, 47]
   k: {t: QWERTY, h: toggle}
   l: [Functions]
-- p: [44, 45]
+- p: [0, 12]
   k: {t: QWERTY, h: toggle}
   l: [Gaming]
 - p: [14, 43]
@@ -434,6 +434,6 @@ combos:
 - p: [45, 42]
   k: {t: Editor, h: toggle}
   l: [QWERTY]
-- p: [44, 45]
+- p: [45, 42]
   k: {t: QWERTY, h: toggle}
   l: [Editor]

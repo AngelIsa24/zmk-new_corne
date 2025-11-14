@@ -395,25 +395,25 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
-- p: [42, 0]
+- p: [42, 45]
   k: {t: Numbers, h: toggle}
   l: [QWERTY]
-- p: [47, 12]
+- p: [47, 44]
   k: {t: Symbols, h: toggle}
   l: [QWERTY]
-- p: [44, 47]
+- p: [47, 12]
   k: {t: Functions, h: toggle}
   l: [QWERTY]
 - p: [0, 12]
   k: {t: Gaming, h: toggle}
   l: [QWERTY]
-- p: [42, 0]
+- p: [42, 45]
   k: {t: QWERTY, h: toggle}
   l: [Numbers]
-- p: [47, 12]
+- p: [47, 44]
   k: {t: QWERTY, h: toggle}
   l: [Symbols]
-- p: [44, 47]
+- p: [47, 12]
   k: {t: QWERTY, h: toggle}
   l: [Functions]
 - p: [0, 12]
@@ -431,9 +431,9 @@ combos:
 - p: [42, 1]
   k: {t: Gaming, h: toggle}
   l: [GamingFn]
-- p: [45, 42]
+- p: [42, 0]
   k: {t: Editor, h: toggle}
   l: [QWERTY]
-- p: [45, 42]
+- p: [42, 0]
   k: {t: QWERTY, h: toggle}
   l: [Editor]

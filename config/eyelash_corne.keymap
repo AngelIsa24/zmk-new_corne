@@ -61,21 +61,21 @@
 
         ToNumbers {
             bindings = <&to 1>;
-            key-positions = <42 0>;
+            key-positions = <42 45>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         ToSymbols {
             bindings = <&to 2>;
-            key-positions = <47 12>;
+            key-positions = <47 44>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         ToFunctions {
             bindings = <&to 3>;
-            key-positions = <44 47>;
+            key-positions = <47 12>;
             layers = <0>;
             timeout-ms = <50>;
         };
@@ -89,21 +89,21 @@
 
         FromNumTo0 {
             bindings = <&to 0>;
-            key-positions = <42 0>;
+            key-positions = <42 45>;
             layers = <1>;
             timeout-ms = <50>;
         };
 
         FromSymTo0 {
             bindings = <&to 0>;
-            key-positions = <47 12>;
+            key-positions = <47 44>;
             layers = <2>;
             timeout-ms = <50>;
         };
 
         FromFnTo0 {
             bindings = <&to 0>;
-            key-positions = <44 47>;
+            key-positions = <47 12>;
             layers = <3>;
             timeout-ms = <50>;
         };
@@ -145,14 +145,14 @@
 
         ToEditor {
             bindings = <&to 4>;
-            key-positions = <45 42>;
+            key-positions = <42 0>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         FromEditTo0 {
             bindings = <&to 0>;
-            key-positions = <45 42>;
+            key-positions = <42 0>;
             layers = <4>;
             timeout-ms = <50>;
         };

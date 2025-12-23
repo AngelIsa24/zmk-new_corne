@@ -65,7 +65,7 @@
         leftpar {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 17>;
-            timeout-ms = <100>;
+            timeout-ms = <60>;
             layers = <0>;
             require-prior-idle-ms = <30>;
         };
@@ -73,7 +73,7 @@
         rightpar {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <23 24>;
-            timeout-ms = <100>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -81,15 +81,15 @@
         leftbrak {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <3 4>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <100>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <130>;
             layers = <0>;
         };
 
         rightbrak {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <8 9>;
-            timeout-ms = <100>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -97,7 +97,7 @@
         leftbrace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <30 31>;
-            timeout-ms = <100>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -105,7 +105,7 @@
         rightbrace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <37 38>;
-            timeout-ms = <100>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -113,7 +113,7 @@
         graveaccent {
             bindings = <&kp GRAVE>;
             key-positions = <15 16>;
-            timeout-ms = <100>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -121,7 +121,7 @@
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <30 31>;
-            timeout-ms = <100>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -129,7 +129,7 @@
         pipe {
             bindings = <&kp PIPE>;
             key-positions = <38 39>;
-            timeout-ms = <100>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -137,7 +137,7 @@
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <24 25>;
-            timeout-ms = <100>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -147,13 +147,13 @@
             key-positions = <4 8>;
             require-prior-idle-ms = <30>;
             layers = <0>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
         };
 
         atsign {
             bindings = <&kp AT_SIGN>;
             key-positions = <17 23>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -161,7 +161,7 @@
         plus {
             bindings = <&kp PLUS>;
             key-positions = <32 37>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -169,7 +169,7 @@
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <3 9>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -177,7 +177,7 @@
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <16 24>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -185,7 +185,7 @@
         star {
             bindings = <&kp STAR>;
             key-positions = <31 38>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -193,7 +193,7 @@
         minus {
             bindings = <&kp MINUS>;
             key-positions = <18 22>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <30>;
             layers = <0 4>;
         };
@@ -201,7 +201,7 @@
         underscore {
             bindings = <&kp UNDER>;
             key-positions = <33 36>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <30>;
             layers = <0 4>;
         };
@@ -209,7 +209,7 @@
         hash {
             bindings = <&kp HASH>;
             key-positions = <5 7>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <30>;
             layers = <0 4>;
         };
@@ -217,7 +217,7 @@
         ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <10 2>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
@@ -225,7 +225,7 @@
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <15 25>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -233,7 +233,7 @@
         caret {
             bindings = <&kp CARET>;
             key-positions = <30 39>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <30>;
             layers = <0>;
         };
@@ -251,15 +251,15 @@
             key-positions = <0 12>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <500>;
+            timeout-ms = <100>;
         };
 
         ToQwerty {
             bindings = <&to 0>;
-            key-positions = <17 23>;
+            key-positions = <0 12>;
             layers = <4>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <500>;
+            timeout-ms = <100>;
         };
     };
 

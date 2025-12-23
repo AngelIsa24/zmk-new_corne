@@ -244,7 +244,7 @@ layers:
   - $$mdi:keyboard-space$$
   - M
   - Y
-  - GamFn
+  - {t: GamFn, h: toggle}
   GamFn:
   - $$mdi:keyboard-esc$$
   - T
@@ -253,12 +253,12 @@ layers:
   - E
   - R
   - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F11
   - $$mdi:apple-keyboard-shift$$
   - G
   - A
@@ -268,12 +268,12 @@ layers:
   - $$mdi:arrow-left-bold$$
   - M
   - $$mdi:arrow-right-bold$$
-  - H
-  - J
-  - K
-  - L
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&ggMacro'
+  - '&f3g'
+  - '&f3b'
+  - '&f3h'
+  - '&f3a'
+  - '&f3t'
+  - '&f3c'
   - $$mdi:apple-keyboard-control$$
   - B
   - Z
@@ -282,18 +282,18 @@ layers:
   - V
   - MUTE
   - $$mdi:arrow-down-bold$$
-  - N
-  - M
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PRINTSCREEN
+  - F6
+  - F7
+  - F8
+  - '&ggMacro'
   - '&InsultMacro'
   - $$mdi:keyboard-tab$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-command$$
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'

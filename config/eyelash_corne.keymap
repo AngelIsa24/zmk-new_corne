@@ -57,104 +57,235 @@
         softoff {
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
-        };
-
-        ToNumbers {
-            bindings = <&to 1>;
-            key-positions = <42 45>;
+            slow-release;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <1000>;
             layers = <0>;
-            timeout-ms = <50>;
         };
 
-        ToSymbols {
-            bindings = <&to 2>;
-            key-positions = <47 44>;
+        leftpar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <16 17>;
+            timeout-ms = <100>;
+            slow-release;
             layers = <0>;
-            timeout-ms = <50>;
+            require-prior-idle-ms = <30>;
         };
 
-        ToFunctions {
-            bindings = <&to 3>;
-            key-positions = <47 12>;
+        rightpar {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <23 24>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <30>;
+            slow-release;
             layers = <0>;
-            timeout-ms = <50>;
         };
 
-        ToGamingHub {
-            bindings = <&to 5>;
-            key-positions = <0 12>;
+        leftbrak {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <3 4>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <30>;
+            slow-release;
             layers = <0>;
-            timeout-ms = <50>;
         };
 
-        FromNumTo0 {
-            bindings = <&to 0>;
-            key-positions = <42 45>;
-            layers = <1>;
-            timeout-ms = <50>;
+        rightbrak {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <8 9>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
         };
 
-        FromSymTo0 {
-            bindings = <&to 0>;
-            key-positions = <47 44>;
-            layers = <2>;
-            timeout-ms = <50>;
+        leftbrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <30 31>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
         };
 
-        FromFnTo0 {
-            bindings = <&to 0>;
-            key-positions = <47 12>;
-            layers = <3>;
-            timeout-ms = <50>;
+        rightbrace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <37 38>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
         };
 
-        FromGHTo0 {
-            bindings = <&to 0>;
-            key-positions = <0 12>;
-            layers = <5>;
-            timeout-ms = <50>;
+        graveaccent {
+            bindings = <&kp GRAVE>;
+            key-positions = <15 16>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
         };
 
-        GHToGHNum {
-            bindings = <&to 6>;
-            key-positions = <14 43>;
-            layers = <5>;
-            timeout-ms = <50>;
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <30 31>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
         };
 
-        GHToGHFn {
-            bindings = <&to 7>;
-            key-positions = <42 1>;
-            layers = <5>;
-            timeout-ms = <50>;
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <38 39>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
         };
 
-        GHNumToGH {
-            bindings = <&to 5>;
-            key-positions = <14 43>;
-            layers = <6>;
-            timeout-ms = <50>;
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <24 25>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
         };
 
-        GHFnToGH {
-            bindings = <&to 5>;
-            key-positions = <42 1>;
-            timeout-ms = <50>;
-            layers = <7>;
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <4 8>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
+            timeout-ms = <250>;
         };
 
-        ToEditor {
+        atsign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <17 23>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <32 37>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <3 9>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <16 24>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
+        };
+
+        star {
+            bindings = <&kp STAR>;
+            key-positions = <31 38>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <18 22>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0 4>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <33 36>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0 4>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <5 7>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0 4>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <10 2>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <15 25>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <30 39>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <30>;
+            slow-release;
+            layers = <0>;
+        };
+
+        escape {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+            timeout-ms = <100>;
+            slow-release;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+
+        ToGaming {
             bindings = <&to 4>;
-            key-positions = <42 0>;
+            key-positions = <0 12>;
+            slow-release;
             layers = <0>;
-            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <500>;
         };
 
-        FromEditTo0 {
+        ToQwerty {
             bindings = <&to 0>;
-            key-positions = <42 0>;
+            key-positions = <17 23>;
+            slow-release;
             layers = <4>;
-            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <500>;
         };
     };
 
@@ -211,7 +342,7 @@
         InsultMacro: InsultMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(G) &kp LS(G) &kp N &kp SQT &kp T &kp SPACE &kp LS(W) &kp H &kp A &kp T &kp SPACE &kp A &kp SPACE &kp LS(L)>;
+            bindings = <&kp LS(G) &kp LS(G) &kp N &kp SQT &kp T &kp SPACE &kp LS(W) &kp H &kp A &kp T &kp SPACE &kp A &kp SPACE &kp LS(N) &kp LS(O) &kp LS(O) &kp LS(B)>;
             label = "INSULTMACRO";
         };
     };
@@ -222,95 +353,72 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E    &kp R     &kp T                              &kp UP                &kp Y      &kp U         &kp I      &kp O    &kp P     &kp BSPC
-&kp LSHFT  &kp A  &kp S  &kp D    &kp F     &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J         &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C    &kp V     &kp B      &kp K_MUTE              &kp DOWN              &kp N      &kp M         &kp COMMA  &kp DOT  &kp FSLH  &kp LC(LA(N))
-                         &kp ESC  &kp LALT  &kp ENTER                                                &kp SPACE  &kp LEFT_GUI  &kp GRAVE
+&kp TAB    &kp Q  &kp W  &kp E         &kp R  &kp T                              &kp UP                &kp Y      &kp U  &kp I         &kp O    &kp P     &kp BSPC
+&kp LSHFT  &kp A  &kp S  &kp D         &kp F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J  &kp K         &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp V  &kp B      &kp K_MUTE              &kp DOWN              &kp N      &kp M  &kp COMMA     &kp DOT  &kp FSLH  &sk LC(LEFT_ALT)
+                         &kp LEFT_ALT  &mo 1  &kp ENTER                                                &kp SPACE  &mo 2  &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        lower_layer {
-            display-name = "Numbers";
+        layer_1 {
             bindings = <
-&kp TAB    &kp STAR   &kp N7  &kp N8     &kp N9   &kp PLUS                                 &kp UP_ARROW                     &kp DOLLAR            &kp PERCENT            &kp KP_N7        &kp KP_N8  &kp KP_N9        &kp BACKSPACE
-&kp LSHFT  &kp DEL    &kp N4  &kp N5     &kp N6   &kp N0                   &kp LEFT_ARROW  &mkp LCLK       &kp RIGHT_ARROW  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_N4        &kp KP_N5  &kp KP_N6        &kp KP_N0
-&kp LCTRL  &kp SLASH  &kp N1  &kp N2     &kp N3   &kp MINUS  &kp K_MUTE                    &kp DOWN_ARROW                   &kp CARET             &kp HASH               &kp KP_NUMBER_1  &kp KP_N2  &kp KP_NUMBER_3  &kp KP_NLCK
-                              &kp COMMA  &kp DOT  &kp ENTER                                                                 &kp SPACE             &kp LEFT_GUI           &kp LEFT_ALT
+&kp TAB    &trans  &kp SLASH  &kp STAR   &kp CARET     &trans                       &trans          &kp DOT    &kp N1  &kp N2  &kp N3  &kp DOLLAR   &kp BSPC
+&kp LSHFT  &trans  &kp PLUS   &kp MINUS  &kp EQUAL     &trans               &trans  &trans  &trans  &kp N0     &kp N4  &kp N5  &kp N6  &kp HASH     &trans
+&kp LCTRL  &trans  &kp COMMA  &kp DOT    &kp LEFT_ALT  &trans     &trans            &trans          &trans     &kp N7  &kp N8  &kp N9  &kp PERCENT  &trans
+                              &trans     &trans        &kp ENTER                                    &kp SPACE  &mo 3   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            label = "Numbers";
         };
 
-        raise_layer {
-            display-name = "Symbols";
+        layer_2 {
+            display-name = "Functions";
             bindings = <
-&kp TAB    &kp GRAVE    &kp EXCL       &kp AT       &kp HASH      &kp PRINTSCREEN                                   &kp UP_ARROW                     &kp PLUS       &kp MINUS         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH  &kp BSPC
-&kp LSHFT  &kp TILDE    &kp DOLLAR     &kp PERCENT  &kp CARET     &PasteMacro                       &kp LEFT_ARROW  &mkp LCLK       &kp RIGHT_ARROW  &kp EQUAL      &kp UNDER         &kp LBKT              &kp RBKT               &kp BSLH   &kp GRAVE
-&kp LCTRL  &SoundMacro  &kp AMPERSAND  &kp STAR     &kp QUESTION  &NotificationMacro  &kp K_MUTE                    &kp DOWN_ARROW                   &kp LESS_THAN  &kp GREATER_THAN  &kp LBRC              &kp RBRC               &kp PIPE   &kp TILDE
-                                       &kp ESC      &kp LALT      &kp ENTER                                                                          &kp SPACE      &kp LEFT_GUI      &kp DOUBLE_QUOTES
+&kp TAB    &kp F1  &kp F2   &kp F3        &kp F4   &trans                                   &kp UP_ARROW                     &trans           &bt BT_CLR          &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_NXT       &sys_reset
+&kp LSHFT  &kp F5  &kp F6   &kp F7        &kp F8   &trans                   &kp LEFT_ARROW  &kp ENTER       &kp RIGHT_ARROW  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG     &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &bootloader
+&kp LCTRL  &kp F9  &kp F10  &kp F11       &kp F12  &trans     &kp K_MUTE                    &kp DOWN_ARROW                   &trans           &NotificationMacro  &PasteMacro      &SoundMacro      &trans           &soft_off
+                            &kp LEFT_ALT  &mo 3    &kp ENTER                                                                 &kp SPACE        &trans              &kp LEFT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         layer_3 {
-            display-name = "Functions";
             bindings = <
-&sys_reset   &rgb_ug RGB_TOG     &rgb_ug RGB_BRI  &rgb_ug RGB_BRD   &rgb_ug RGB_HUI  &rgb_ug RGB_HUD                                &mmv MOVE_UP                     &kp F1     &kp F2        &kp F3     &kp F4     &kp F5   &kp F6
-&soft_off    &bt BT_SEL 0        &bt BT_SEL 1     &bt BT_NXT        &bt BT_NXT       &bt BT_CLR_ALL                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F7     &kp F8        &kp F9     &kp F10    &kp F11  &kp F12
-&PasteMacro  &NotificationMacro  &kp C_PREV       &kp C_PLAY_PAUSE  &kp C_NEXT       &SoundMacro      &kp K_MUTE                    &mmv MOVE_DOWN                   &kp HOME   &kp END       &kp PG_UP  &kp PG_DN  &kp INS  &kp DEL
-                                                  &kp ESC           &kp LALT         &kp ENTER                                                                       &kp SPACE  &kp LEFT_GUI  &kp X
+&kp TAB    &mkp MB1  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans                               &kp UP_ARROW                     &trans     &kp K_PREV         &kp K_PLAY_PAUSE  &kp K_NEXT       &kp INS        &kp DELETE
+&kp LSHFT  &mkp MB2  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans               &kp LEFT_ARROW  &kp ENTER       &kp RIGHT_ARROW  &trans     &kp PRINTSCREEN    &kp PRINTSCREEN   &kp PRINTSCREEN  &kp C_AC_HOME  &kp END
+&kp LCTRL  &mkp MB3  &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &trans     &trans                    &kp DOWN_ARROW                   &trans     &kp C_VOLUME_DOWN  &kp K_MUTE        &kp C_VOLUME_UP  &kp PAGE_UP    &kp PAGE_DOWN
+                                     &kp LEFT_ALT    &trans           &kp ENTER                                                             &kp SPACE  &trans             &trans
             >;
 
+            label = "Media";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         layer_4 {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E          &kp R     &kp T                           &kp F1          &kp Y      &kp U     &kp I          &kp O    &kp P     &kp ESC
-&kp LSHFT  &kp A  &kp S  &kp D          &kp F     &kp G                   &kp F2  &kp F3  &kp F4  &kp H      &kp J     &kp K          &kp L    &kp SEMI  &kp APOS
-&kp LCTRL  &kp Z  &kp X  &kp C          &kp V     &kp B      &kp SPACE            &kp F5          &kp N      &kp M     &kp COMMA      &kp DOT  &kp FSLH  &kp END
-                         &kp BACKSPACE  &kp LALT  &kp SPACE                                       &kp ENTER  &kp LGUI  &kp C_AC_HOME
-            >;
-
-            label = "Editor";
-            sensor-bindings = <&inc_dec_kp 0 0>;
-        };
-
-        layer_5 {
-            bindings = <
-&kp ESC    &kp T  &kp Q  &kp W    &kp E     &kp R                                    &kp UP_ARROW                     &kp Y      &kp U         &kp I      &kp O    &kp P      &kp BSPC
-&kp LSHFT  &kp G  &kp A  &kp S    &kp D     &kp F                    &kp LEFT_ARROW  &kp M           &kp RIGHT_ARROW  &kp H      &kp J         &kp K      &kp L    &kp GRAVE  &ggMacro
-&kp LCTRL  &kp B  &kp Z  &kp X    &kp C     &kp V      &kp K_MUTE                    &kp DOWN_ARROW                   &kp N      &kp M         &kp COMMA  &kp DOT  &kp SLASH  &InsultMacro
-                         &kp TAB  &kp LALT  &kp SPACE                                                                 &kp ENTER  &kp LEFT_GUI  &kp GRAVE
+&kp ESC    &kp T  &kp Q  &kp W    &kp E     &kp R                                    &kp UP_ARROW                     &kp I   &kp N1  &kp N2  &kp N3  &kp U  &kp O
+&kp LSHFT  &kp G  &kp A  &kp S    &kp D     &kp F                    &kp LEFT_ARROW  &kp J           &kp RIGHT_ARROW  &kp N0  &kp N4  &kp N5  &kp N6  &kp P  &kp H
+&kp LCTRL  &kp B  &kp Z  &kp X    &kp C     &kp V      &kp K_MUTE                    &kp DOWN_ARROW                   &kp L   &kp N7  &kp N8  &kp N9  &kp K  &kp N
+                         &kp TAB  &kp LALT  &kp SPACE                                                                 &kp M   &kp Y   &mo 5
             >;
 
             label = "Gaming";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
-        layer_6 {
+        layer_5 {
             bindings = <
-&kp ESC    &kp N0  &kp N1  &kp N2  &kp N3  &kp N0                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp N4  &kp N4  &kp N5  &kp N6  &kp N6               &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp N0  &kp N7  &kp N8  &kp N9  &kp N0     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                           &kp N0  &kp N1  &kp SPACE                                    &trans  &trans  &trans
-            >;
-
-            label = "GamNum";
-        };
-
-        layer_7 {
-            bindings = <
-&kp ESC    &kp O   &kp I   &kp M   &kp H   &kp N                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp Y   &kp J   &kp K   &kp L   &kp P                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp F6  &kp F1  &kp F2  &kp F3  &kp K      &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                           &kp F5  &kp F4  &kp SPACE                                    &trans  &trans  &trans
+&kp ESC    &kp T  &kp Q  &kp W    &kp E     &kp R                                    &kp UP_ARROW                     &kp Y      &kp U         &kp I   &kp O  &kp P  &kp BSPC
+&kp LSHFT  &kp G  &kp A  &kp S    &kp D     &kp F                    &kp LEFT_ARROW  &kp M           &kp RIGHT_ARROW  &kp H      &kp J         &kp K   &kp L  &none  &ggMacro
+&kp LCTRL  &kp B  &kp Z  &kp X    &kp C     &kp V      &kp K_MUTE                    &kp DOWN_ARROW                   &kp N      &kp M         &none   &none  &none  &InsultMacro
+                         &kp TAB  &kp LALT  &kp SPACE                                                                 &kp ENTER  &kp LEFT_GUI  &trans
             >;
 
             label = "GamFn";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
     };
 };

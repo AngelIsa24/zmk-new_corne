@@ -370,6 +370,6 @@ combos:
 - p: [0, 12]
   k: {t: Gaming, h: toggle}
   l: [QWERTY]
-- p: [17, 23]
+- p: [0, 12]
   k: {t: QWERTY, h: toggle}
   l: [Gaming]

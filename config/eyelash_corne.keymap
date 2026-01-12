@@ -416,8 +416,6 @@
 &kp LCTRL  &kp Z  &kp X  &kp C         &kp V  &kp B      &kp K_MUTE              &kp DOWN              &kp N      &kp M  &kp COMMA     &kp DOT  &kp FSLH  &sk RIGHT_ALT
                          &kp LEFT_ALT  &mo 1  &kp ENTER                                                &kp SPACE  &mo 2  &kp LEFT_WIN
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_1 {
@@ -439,8 +437,6 @@
 &kp LCTRL  &kp F9  &kp F10  &kp F11       &kp F12  &none      &kp K_MUTE                    &kp DOWN_ARROW                   &none            &NotificationMacro  &PasteMacro      &SoundMacro      &none            &soft_off
                             &kp LEFT_ALT  &mo 3    &kp ENTER                                                                 &kp SPACE        &trans              &kp LEFT_GUI
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         layer_3 {
@@ -452,7 +448,6 @@
             >;
 
             label = "Media";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         layer_4 {
@@ -464,7 +459,6 @@
             >;
 
             label = "Gaming";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         layer_5 {
@@ -476,7 +470,6 @@
             >;
 
             label = "GamFn";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
     };
 };

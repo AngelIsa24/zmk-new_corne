@@ -204,12 +204,12 @@ layers:
   - E
   - R
   - $$mdi:arrow-up-bold$$
-  - I
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
+  - Y
   - U
+  - I
   - O
+  - P
+  - PRINTSCREEN
   - $$mdi:apple-keyboard-shift$$
   - G
   - A
@@ -217,14 +217,14 @@ layers:
   - D
   - F
   - $$mdi:arrow-left-bold$$
-  - J
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - {t: '0', s: )}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - P
   - H
+  - J
+  - K
+  - L
+  - P
+  - '&ggMacro'
   - $$mdi:apple-keyboard-control$$
   - B
   - Z
@@ -233,17 +233,17 @@ layers:
   - V
   - MUTE
   - $$mdi:arrow-down-bold$$
-  - L
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - K
   - N
+  - M
+  - {t: '`', s: '~'}
+  - .
+  - {t: /, s: '?'}
+  - '&InsultMacro'
   - $$mdi:keyboard-tab$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - M
-  - Y
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - F3
   - {t: GamFn, h: toggle}
   GamFn:
   - $$mdi:keyboard-esc$$
@@ -286,8 +286,8 @@ layers:
   - F6
   - F7
   - F8
-  - '&ggMacro'
-  - '&InsultMacro'
+  - F9
+  - F10
   - $$mdi:keyboard-tab$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
@@ -310,7 +310,7 @@ combos:
 - p: [8, 9]
   k: {t: ']', s: '}'}
   l: [QWERTY]
-- p: [30, 31]
+- p: [31, 32]
   k: '{'
   l: [QWERTY]
 - p: [37, 38]

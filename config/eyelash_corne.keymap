@@ -274,7 +274,93 @@
             key-positions = <0 12>;
             timeout-ms = <100>;
             require-prior-idle-ms = <150>;
-            layers = <4 5>;
+            layers = <4 5 6 7>;
+        };
+    };
+
+    macros {
+        ctrlf13: ctrlf13 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp F13>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "CTRLF13";
+        };
+
+        ctrlf14: ctrlf14 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp F14>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "CTRLF14";
+        };
+
+        ctrlf15: ctrlf15 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp F15>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "CTRLF15";
+        };
+
+        ctrlf16: ctrlf16 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp F16>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "CTRLF16";
+        };
+
+        ctrlf17: ctrlf17 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp F17>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "CTRLF17";
+        };
+
+        ctrlf18: ctrlf18 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp F18>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "CTRLF18";
         };
     };
 
@@ -286,7 +372,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                              &kp UP                &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LSHFT  &kp A  &kp S  &kp D     &kp F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp C_MUTE              &kp DOWN              &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp C_MUTE              &kp DOWN              &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &sk RALT
                          &kp LALT  &mo 1  &kp ENTER                                                &kp SPACE  &mo 2  &kp LGUI
             >;
 
@@ -308,10 +394,10 @@
         layer_2 {
             display-name = "Media";
             bindings = <
-&kp TAB    &mkp MB1  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &none                     &trans          &none   &kp PRINTSCREEN    &kp PRINTSCREEN   &kp PRINTSCREEN  &kp INS        &kp DELETE
-&kp LSHFT  &mkp MB2  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none             &trans  &trans  &trans  &none   &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &kp C_AC_HOME  &kp END
-&kp LCTRL  &mkp MB3  &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &none   &trans            &trans          &none   &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &kp PAGE_UP    &kp PAGE_DOWN
-                                     &trans          &mo 3            &trans                                    &trans  &trans             &trans
+&kp TAB    &mkp MB1  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &none                     &trans          &kp PRINTSCREEN  &kp F13            &kp F14           &kp F15          &kp INS        &kp DELETE
+&kp LSHFT  &mkp MB2  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none             &trans  &trans  &trans  &kp PRINTSCREEN  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &kp C_AC_HOME  &kp END
+&kp LCTRL  &mkp MB3  &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &none   &trans            &trans          &kp PRINTSCREEN  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &kp PAGE_UP    &kp PAGE_DOWN
+                                     &trans          &mo 3            &trans                                    &trans           &trans             &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -321,7 +407,7 @@
             display-name = "Fn";
             bindings = <
 &kp TAB    &kp F1  &kp F2   &kp F3    &kp F4   &none                                &bootloader              &bt BT_CLR       &bt BT_PRV       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_NXT       &bt BT_CLR_ALL
-&kp LSHFT  &kp F5  &kp F6   &kp F7    &kp F8   &none                    &sys_reset  &trans        &soft_off  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(51,100,50)
+&kp LSHFT  &kp F5  &kp F6   &kp F7    &kp F8   &none                    &sys_reset  &trans        &soft_off  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(40,100,50)
 &kp LCTRL  &kp F9  &kp F10  &kp F11   &kp F12  &none      &kp C_MUTE                &out OUT_TOG             &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
                             &kp LALT  &trans   &kp ENTER                                                     &kp SPACE        &trans           &kp LGUI
             >;
@@ -331,10 +417,10 @@
 
         layer_4 {
             bindings = <
-&kp ESC    &kp T  &kp Q  &kp W    &kp E     &kp R                                    &kp UP_ARROW                     &kp Y      &kp U            &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LSHFT  &kp G  &kp A  &kp S    &kp D     &kp F                    &kp LEFT_ARROW  &kp ENTER       &kp RIGHT_ARROW  &kp H      &kp J            &kp K      &kp L    &kp SEMI  &tog 5
-&kp LCTRL  &kp B  &kp Z  &kp X    &kp C     &kp V      &kp C_MUTE                    &kp DOWN_ARROW                   &kp N      &kp M            &kp COMMA  &kp DOT  &kp FSLH  &none
-                         &kp TAB  &kp LALT  &kp SPACE                                                                 &kp ENTER  &kp PRINTSCREEN  &none
+&kp ESC    &kp T  &kp Q  &kp W    &kp E     &kp R                                    &kp UP_ARROW                     &kp Y      &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LSHFT  &kp G  &kp A  &kp S    &kp D     &kp F                    &kp LEFT_ARROW  &kp ENTER       &kp RIGHT_ARROW  &kp H      &kp J   &kp K      &kp L    &kp SEMI  &tog 5
+&kp LCTRL  &kp B  &kp Z  &kp X    &kp C     &kp V      &kp C_MUTE                    &kp DOWN_ARROW                   &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &tog 7
+                         &kp TAB  &kp LALT  &kp SPACE                                                                 &kp ENTER  &tog 6  &kp F3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -343,13 +429,36 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp F1        &kp F2           &kp F3  &kp F4  &kp F5   &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &none         &none            &none   &none   &none    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp F6        &kp F7           &kp F8  &kp F9  &kp F10  &kp F12
-                        &trans  &trans  &trans                                    &kp LEFT_WIN  &kp PRINTSCREEN  &none
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &none         &kp F1  &kp F2   &kp F3   &kp F4   &none
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &none         &kp F5  &kp F6   &kp F7   &kp F8   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &none         &kp F9  &kp F10  &kp F11  &kp F12  &none
+                        &trans  &trans  &trans                                    &kp LEFT_WIN  &none   &none
             >;
 
             label = "GamFn";
+        };
+
+        layer_6 {
+            display-name = "GamMedia";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp PRINTSCREEN  &kp F13            &kp F14           &kp F15          &kp INS        &kp DELETE
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp PRINTSCREEN  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &kp C_AC_HOME  &kp END
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp PRINTSCREEN  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &kp PAGE_UP    &kp PAGE_DOWN
+                        &trans  &trans  &trans                                    &kp LEFT_WIN     &trans             &none
+            >;
+
+            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &ctrlf13  &kp F16  &kp F17   &kp F18   &kp F19   &none
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &ctrlf14  &kp F20  &kp F21   &kp F22   &kp F23   &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &ctrlf15  &kp F24  &ctrlf16  &ctrlf17  &ctrlf18  &trans
+                        &trans  &trans  &trans                                    &kp LWIN  &none    &none
+            >;
+
+            label = "GamMacro";
         };
     };
 };

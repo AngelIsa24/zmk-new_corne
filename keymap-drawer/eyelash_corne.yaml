@@ -107,9 +107,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
-  - F13
-  - F14
-  - F15
+  - '&starf1'
+  - '&starf2'
+  - '&starf3'
   - INS
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-shift$$
@@ -175,7 +175,7 @@ layers:
   - RGB BRI
   - RGB EFR
   - RGB EFF
-  - RGB COLOR HSB(40,100,50)
+  - RGB COLOR HSB(28,100,50)
   - $$mdi:apple-keyboard-control$$
   - F9
   - F10
@@ -303,9 +303,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
-  - F13
-  - F14
-  - F15
+  - '&starf1'
+  - '&starf2'
+  - '&starf3'
   - INS
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -351,11 +351,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&ctrlf13'
-  - F16
-  - F17
-  - F18
-  - F19
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&starf4'
+  - '&starf5'
+  - '&starf6'
+  - '&starf7'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -366,11 +366,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&ctrlf14'
-  - F20
-  - F21
-  - F22
-  - F23
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&starf8'
+  - '&starf9'
+  - '&starf10'
+  - '&starf11'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -380,11 +380,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&ctrlf15'
-  - F24
-  - '&ctrlf16'
-  - '&ctrlf17'
-  - '&ctrlf18'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&starf12'
+  - '&starnum0'
+  - '&starnum1'
+  - '&starnum2'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

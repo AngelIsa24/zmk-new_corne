@@ -3,7 +3,7 @@ layers:
   QWERTY:
   - $$mdi:keyboard-tab$$
   - Q
-  - W
+  - F13
   - E
   - R
   - T
@@ -30,8 +30,8 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
+  - F14
+  - F15
   - C
   - V
   - B

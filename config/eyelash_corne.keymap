@@ -292,202 +292,6 @@
 
             label = "CTRLF13";
         };
-
-        starf2: starf2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp F2>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARF2";
-        };
-
-        starf3: starf3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp F3>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARF3";
-        };
-
-        starf4: starf4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp F4>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARF4";
-        };
-
-        starf5: starf5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp F5>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARF5";
-        };
-
-        starf6: starf6 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp F6>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARF6";
-        };
-
-        starf7: starf7 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp F7>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARF7";
-        };
-
-        starf8: starf8 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp F8>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARF8";
-        };
-
-        starf9: starf9 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp F9>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARF9";
-        };
-
-        starf10: starf10 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp F10>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARF10";
-        };
-
-        starf11: starf11 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp F11>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARF11";
-        };
-
-        starf12: starf12 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp F12>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARF12";
-        };
-
-        starnum0: starnum0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARNUM0";
-        };
-
-        starnum1: starnum1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_1>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARNUM1";
-        };
-
-        starnum2: starnum2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp STAR>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_2>,
-                <&macro_release>,
-                <&kp STAR>;
-
-            label = "STARNUM2";
-        };
     };
 
     keymap {
@@ -496,10 +300,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q    &kp F13  &kp E     &kp R  &kp T                              &kp UP                &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LSHFT  &kp A    &kp S    &kp D     &kp F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp F14  &kp F15  &kp C     &kp V  &kp B      &kp C_MUTE              &kp DOWN              &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &sk RALT
-                             &kp LALT  &mo 1  &kp ENTER                                                &kp SPACE  &mo 2  &kp LGUI
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                              &kp UP                &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LSHFT  &kp A  &kp S  &kp D     &kp F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp C_MUTE              &kp DOWN              &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &sk RALT
+                         &kp LALT  &mo 1  &kp ENTER                                                &kp SPACE  &mo 2  &kp LGUI
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -520,7 +324,7 @@
         layer_2 {
             display-name = "Media";
             bindings = <
-&kp TAB    &mkp MB1  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &none                     &trans          &kp PRINTSCREEN  &starf1            &starf2           &starf3          &kp INS        &kp DELETE
+&kp TAB    &mkp MB1  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &none                     &trans          &kp PRINTSCREEN  &kp F13            &kp F14           &kp F15          &kp INS        &kp DELETE
 &kp LSHFT  &mkp MB2  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none             &trans  &trans  &trans  &kp PRINTSCREEN  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &kp C_AC_HOME  &kp END
 &kp LCTRL  &mkp MB3  &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &none   &trans            &trans          &kp PRINTSCREEN  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &kp PAGE_UP    &kp PAGE_DOWN
                                      &trans          &mo 3            &trans                                    &trans           &trans             &trans
@@ -543,10 +347,10 @@
 
         layer_4 {
             bindings = <
-&kp ESC    &kp T  &kp Q  &kp W    &kp E     &kp R                                    &kp UP_ARROW                     &kp Y      &kp U   &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LSHFT  &kp G  &kp A  &kp S    &kp D     &kp F                    &kp LEFT_ARROW  &kp ENTER       &kp RIGHT_ARROW  &kp H      &kp J   &kp K      &kp L    &kp SEMI  &tog 5
-&kp LCTRL  &kp B  &kp Z  &kp X    &kp C     &kp V      &kp C_MUTE                    &kp DOWN_ARROW                   &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &tog 7
-                         &kp TAB  &kp LALT  &kp SPACE                                                                 &kp ENTER  &tog 6  &kp F3
+&kp ESC    &kp T  &kp Q  &kp W    &kp E     &kp R                                    &kp UP_ARROW                     &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LSHFT  &kp G  &kp A  &kp S    &kp D     &kp F                    &kp LEFT_ARROW  &kp ENTER       &kp RIGHT_ARROW  &kp H      &kp J  &kp K      &kp L    &kp SEMI  &tog 5
+&kp LCTRL  &kp B  &kp Z  &kp X    &kp C     &kp V      &kp C_MUTE                    &kp DOWN_ARROW                   &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &tog 7
+                         &kp TAB  &kp LALT  &kp SPACE                                                                 &kp ENTER  &mo 6  &kp F3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -567,7 +371,7 @@
         layer_6 {
             display-name = "GamMedia";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp PRINTSCREEN  &starf1            &starf2           &starf3          &kp INS        &kp DELETE
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp PRINTSCREEN  &kp F13            &kp F14           &kp F15          &kp INS        &kp DELETE
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp PRINTSCREEN  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &kp C_AC_HOME  &kp END
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp PRINTSCREEN  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &kp PAGE_UP    &kp PAGE_DOWN
                         &trans  &trans  &trans                                    &kp LEFT_WIN     &trans             &none
@@ -578,10 +382,10 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &none     &starf4   &starf5    &starf6    &starf7    &none
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &none     &starf8   &starf9    &starf10   &starf11   &none
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &none     &starf12  &starnum0  &starnum1  &starnum2  &trans
-                        &trans  &trans  &trans                                    &kp LWIN  &none     &none
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp LC(F13)  &kp LC(F14)  &kp LC(F15)  &kp F16      &kp F17      &none
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp F18      &kp F19      &kp F20      &kp F21      &kp F22      &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp F23      &kp F24      &kp LC(F16)  &kp LC(F17)  &kp LC(F18)  &trans
+                        &trans  &trans  &trans                                    &kp LC(F19)  &kp LC(F20)  &kp LC(F21)
             >;
 
             label = "GamMacro";

@@ -3,7 +3,7 @@ layers:
   QWERTY:
   - $$mdi:keyboard-tab$$
   - Q
-  - F13
+  - W
   - E
   - R
   - T
@@ -30,8 +30,8 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
-  - F14
-  - F15
+  - Z
+  - X
   - C
   - V
   - B
@@ -107,9 +107,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
-  - '&starf1'
-  - '&starf2'
-  - '&starf3'
+  - F13
+  - F14
+  - F15
   - INS
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-shift$$
@@ -243,7 +243,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: GamMedia, h: toggle}
+  - GamMedia
   - F3
   GamFn:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -303,9 +303,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
-  - '&starf1'
-  - '&starf2'
-  - '&starf3'
+  - F13
+  - F14
+  - F15
   - INS
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -341,7 +341,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - LEFT WIN
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   GamMacro:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -351,26 +351,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&starf4'
-  - '&starf5'
-  - '&starf6'
-  - '&starf7'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&starf8'
-  - '&starf9'
-  - '&starf10'
-  - '&starf11'
+  - Ctl+F13
+  - Ctl+F14
+  - Ctl+F15
+  - F16
+  - F17
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -380,18 +365,33 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F18
+  - F19
+  - F20
+  - F21
+  - F22
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&starf12'
-  - '&starnum0'
-  - '&starnum1'
-  - '&starnum2'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - LWIN
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F23
+  - F24
+  - Ctl+F16
+  - Ctl+F17
+  - Ctl+F18
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+F19
+  - Ctl+F20
+  - Ctl+F21
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
